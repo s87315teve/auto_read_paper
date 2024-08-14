@@ -46,7 +46,7 @@ def parse_relevance(response):
 def process_pdf_folder(folder_path, topic, csv_path):
     """處理指定資料夾中的所有PDF文件，找出與主題相關的論文，並將結果寫入CSV"""
     relevant_papers = []
-    with open(csv_path, 'w', newline='', encoding='utf-8') as csvfile:
+    with open(csv_path, 'w', newline='', encoding='utf-8-sig') as csvfile:
         csv_writer = csv.writer(csvfile)
         csv_writer.writerow(['Filename', 'Title', 'Relevance', 'Reason'])
         
