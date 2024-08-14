@@ -3,6 +3,9 @@ import csv
 from PyPDF2 import PdfReader
 import ollama
 
+
+#default model is llama3.1:8b
+#can try llama3.1:8b-instruct-fp16 on RTX4090 (maybe)
 def read_pdf(file_path):
     """讀取PDF文件並返回其文字內容和標題"""
     with open(file_path, 'rb') as file:
