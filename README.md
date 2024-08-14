@@ -13,13 +13,13 @@ pip install PyPDF2
 ollama serve
 ```
 Terminal 會出現類似下面的內容
-![alt text](image.png)
+![alt text](images/image01.png)
 - 第一次執行的時候先**打開新的 Terminal** ，在上面輸入以下內容，程式將會自動下載 [llama3.1:8b](https://ollama.com/library/llama3.1) 模型並開啟聊天機器人
 ```bash
 ollama run llama3.1:8b
 ```
 - 成功之後會像下面這樣，可以試著跟他聊天看看
-![alt text](image-1.png)
+![alt text](images/image02.png)
 - 最後在對話的地方輸入```/bye```關閉 llama3.1:8b
 
 ## 程式執行
