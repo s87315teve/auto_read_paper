@@ -71,7 +71,7 @@ def process_pdf_folder(folder_path, topic, csv_path):
 
 # 主程式
 if __name__ == "__main__":
-    folder_path = "D:\\research\\ICC 2024-20240814T062802Z-001\\ICC 2024\\papers"
+    folder_path = "paper_folder"
     search_topic = "使用machine learning來做path loss prediction"
     csv_path = "paper_relevance.csv"
     

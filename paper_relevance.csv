@@ -1,0 +1,11 @@
+Filename,Title,Relevance,Reason
+A Comparison of Transformer_and_Recurrent_Neural_Networks_on_Multilingual_Neural_Machine_Translation.pdf,,否,這篇文本主要探討的是神經機器翻譯的技術，並比較了Transformer和Recurrent Neural Networks在多語翻譯中的表現，與使用機器學習做路損預測無直接關係。
+Asynchronous_Methods_for_Deep_Reinforcement_Learning.pdf,Asynchronous Methods for Deep Reinforcement Learning,否,文本介紹了一種新的深度強化學習演算法框架，主要著重在探討使用非同步梯度下降來優化深度神經網絡控制器的方法，與path loss prediction無直接關係。
+Attention_Is_All_You_Need.pdf,Attention is All you Need,否,這個文本關於Transformer模型的介紹，而不是與「使用machine learning來做path loss prediction」相關。它描述了一種新的機器學習架構（Transformer），用於序列轉換任務（如機翻），但沒有涉及到通訊或無線通信領域中所謂的path loss prediction。
+A_Comparison_of_Transformer_and_LSTM_Encoder_Decoder_Models_for_ASR.pdf,A Comparison of Transformer and LSTM Encoder Decoder Models for ASR,否,
+Comparison_of_Predictive_Models_for_Forecasting_Timeseries_Data.pdf,Comparison of Predictive Models for...,否,這個文本主要討論的是預測時序資料（time-series data）的方法，包括機器學習模型的比較，但沒有提及路損預測（path loss prediction），而是關於氣象時序資料的預測。
+Deep_Transformer_Models_for_Time_Series_Forecasting_The_Influenza_Prevalence_Case.pdf,Deep Transformer Models for Time Series Forecasting:The Influenza Prevalence Case,否,這篇文本主要是關於使用Transformer模型在時序預測方面的研究，特別是在流感傳染率預測方面，並沒有涉及到機器學習在路損預測的應用。
+Informer_Beyond_Efficient_Transformer_for_Long_Sequence_Time-Series_Forecasting.pdf,Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting,否,這篇文章主要是介紹一種新型的時間序列預測模型(Informer)，並討論其對於長序列時間序列預測（LSTF）的效能。雖然它提到了一些相關的計算複雜度問題，但並沒有直接涉及機器學習在路損預測（path loss prediction）上的應用。
+Machine_Learning-Based_Methods_for_Path_Loss_Prediction_in_Urban_Environment_for_LTE_Networks.pdf,Machine Learning-Based Methods for Path Loss Prediction in Urban Environment for LTE Networks,是,這個文本明確地描述了使用機器學習方法預測路徑損失（path loss）的研究工作，包括支持向量回歸 (SVR)、隨機森林 (RF) 和 K-最近鄰 (KNN) 算法的評估和比較。
+sensors-20-01927-v3.pdf,sensors Article Path Loss Prediction...,是,"文本中明確提到使用machine learning的技術（如artificial neural network、Gaussian process和Principal Component Analysis）來進行path loss prediction，因此與主題""使用machine learning來做path loss prediction""相關。"
+Vision_GNN_An_Image_is_Worth_Graph_of_Nodes.pdf,,否,這個文本似乎關於深度學習在視覺系統中的應用，特別是對於圖像分割、特徵提取等問題的研究，但它並沒有與「使用機器學習做路損預測」有直接關係。
