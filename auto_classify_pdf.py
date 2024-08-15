@@ -72,10 +72,11 @@ def process_pdf_folder(folder_path, categories, csv_path):
 
 # 主程式
 if __name__ == "__main__":
-    folder_path = "../3dmap"
-    categories = ["Tool", "Machine learning + wireless", "Wireless", "Survey", "Book", "Dynamic Transmission", "Sensor fusion", "Neural network architecture", "Standardization", "Air-to-ground channel", "Other"]
-    csv_path = folder_path+"/paper_classification.csv"
+    folder_path = "../papers/3dmap"
+    categories = ["Tool", "Machine learning + wireless", "Wireless", "Survey", "Book", "Dynamic Transmission", "Sensor fusion", "Machine learning technique", "Standardization", "Air-to-ground channel", "Other"]
+    csv_path = folder_path+"/paper_classification_8b_default.csv"
     model_name="llama3.1:8b"
+    # model_name="llama3.1:8b-instruct-fp16"
     
     print(f"分類類別: {', '.join(categories)}")
     process_pdf_folder(folder_path, categories, csv_path)
