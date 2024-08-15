@@ -4,8 +4,10 @@ from PyPDF2 import PdfReader
 import ollama
 
 
+# model_name="llama3.1:8b"
+# model_name="llama3.1:8b-instruct-fp16"
 #default model is llama3.1:8b
-#can try llama3.1:8b-instruct-fp16 on RTX4090 (maybe)
+#can try llama3.1:8b-instruct-fp16 on RTX4090
 def read_pdf(file_path):
     """讀取PDF文件並返回其文字內容和標題"""
     with open(file_path, 'rb') as file:
@@ -31,7 +33,7 @@ def is_relevant(text, topic):
 
     文本：{text[:1500]}...
     """
-    response = ollama.chat(model="llama3.1:8b", messages=[{"role": "user", "content": prompt}])
+    response = ollama.chat(model=model_name, messages=[{"role": "user", "content": prompt}])
     return response["message"]["content"]
 
 def parse_relevance(response):
@@ -74,9 +76,10 @@ def process_pdf_folder(folder_path, topic, csv_path):
 
 # 主程式
 if __name__ == "__main__":
-    folder_path = "paper_folder"
+    folder_path = "/home/mirc516/Desktop/steve/ICC 2024/papers"
     search_topic = "使用machine learning來做path loss prediction"
-    csv_path = "paper_relevance.csv"
+    csv_path = "paper_relevance_8b_default.csv"
+    model_name="llama3.1:8b"
     
     print(f"搜索主題: {search_topic}")
     relevant_papers = process_pdf_folder(folder_path, search_topic, csv_path)
